@@ -3,6 +3,8 @@ File Downloader
 
 A simple asynchronous file downloader written in Java.
 
+This fork updates the code, mostly changing deprecated constructors.
+
 ## How to implement the FileDownloaderDelegate
 
   Simple! Create a FileDownloader and pass your class that implements FileDowloaderDelegate to it.
