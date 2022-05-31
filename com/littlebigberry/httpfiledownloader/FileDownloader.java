@@ -195,6 +195,10 @@ public class FileDownloader implements DownloadWorkerDelegate {
 		this.percentComplete = MessageFormat.format("{0, number, #.##%}", percentComplete);
 	}
 
+	public double getPercentCompleteAsDouble() {
+		return  (double) this.getBytesWritten() / (double) this.getDownloadWorker().getFileSize();
+	}
+	
 	public boolean isDownloading() {
 		return isDownloading;
 	}
